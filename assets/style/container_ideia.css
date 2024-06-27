@@ -1,0 +1,175 @@
+.container__ideas {
+    margin: 2px auto;
+    background-color: rgb(169, 97, 196);
+    border: 5px solid rgb(104, 57, 142);
+    padding: 3px;
+    border-radius: 5px;
+    width: auto;
+    max-width: 100%;
+}
+
+.container__ideas>ul>li>p {
+    text-align: justify;
+    max-width: 100%;
+    font-size: 1.3rem;
+    padding: 15px;
+}
+
+.container__ideas>ul {
+    list-style: none;
+    color: rgba(26, 5, 5, 0.752);
+}
+
+.container__ideas>ul>li>h2 {
+    margin: 12px 0px 12px 12px;
+    text-decoration: double !important;
+    background-color: transparent;
+    width: 99%;
+    max-width: 99%;
+    color: rgb(80, 0, 0);
+}
+
+.container__ideas>ul>li>p {
+    text-align: justify;
+    max-width: 100%;
+
+    padding: 15px;
+}
+
+.title__page {
+    text-align: center;/* Para alinhar os elementos ao centro */
+    position: relative;/* Necessário para alinhar o texto ao fundo */
+    z-index: 1;
+    max-width: 100%;
+    display: flex;/* Adicionando para alinhar os itens horizontalmente */
+    justify-content: center;/* Adicionando para alinhar os itens horizontalmente */
+    align-items: flex-end;/* Para alinhar o texto ao fundo */
+    height: 10rem;
+    color: rgb(173, 173, 191);
+    
+    margin: 2px;
+
+    background: url('./assets/img/aline.png');
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.title__page h1 {
+    animation: fadeInOut 8s infinite; /* Executa a animação em loop */
+    font-size: 40px;
+    font-family: 'Monte-carlo', sans-serif;
+    
+    color: rgb(31, 3, 69);
+    background-color: rgba(215, 160, 160, 0.265);
+    background: linear-gradient(to bottom, #090a0a22 0%, #bea2e7ad 25%, #bea2e7d3 50%, #bea2e729 75%, #322b3dd3 100%);
+    
+    position: absolute; /* Para posicionar o texto */
+    bottom: 0; /* Alinha o texto ao fundo */
+    left: 50%; /* Centraliza o texto horizontalmente */
+    transform: translateX(-50%); /* Corrige a centralização */
+    width: 100%;
+    max-width: 100%;
+    
+}
+.title__page img {
+    animation: animacao-imagem 3s infinite;
+    width: 50px;
+    margin: auto 150px;
+}
+
+
+@media only screen and (min-width: 351px) and (max-width: 768px) {
+
+    .title__page h1 {
+        width: 100%;
+        
+        font-size: 25px;
+        
+        position: absolute; /* Para posicionar o texto */
+        bottom: 0; /* Alinha o texto ao fundo */
+        left: 50%; /* Centraliza o texto horizontalmente */
+        transform: translateX(-50%); /* Corrige a centralização */
+
+        background-color: rgba(215, 160, 160, 0.265);
+    }
+
+    .title__page img {
+        width: 45px;
+        margin: auto 115px;
+    }
+}
+@media only screen and (min-width: 291px) and (max-width: 350px) {
+
+    .title__page h1 {
+        width: 90%;
+        
+        font-size: 25px;
+        
+        position: absolute; /* Para posicionar o texto */
+        bottom: 0; /* Alinha o texto ao fundo */
+        left: 50%; /* Centraliza o texto horizontalmente */
+        transform: translateX(-50%); /* Corrige a centralização */
+
+        background-color: rgba(215, 160, 160, 0.265);
+    }
+
+    .title__page img {
+        width: 38px;
+        margin: auto 115px;
+    }
+}
+@media only screen and (min-width: 100px) and (max-width: 290px) {
+
+    .title__page h1 {
+        width: 90%;
+        
+        font-size: 20px;
+        
+        
+        position: absolute; /* Para posicionar o texto */
+        bottom: 1px; /* Alinha o texto ao fundo */
+        left: 50%; /* Centraliza o texto horizontalmente */
+        transform: translateX(-50%); /* Corrige a centralização */
+
+        background-color: rgba(215, 160, 160, 0.265);
+    }
+
+    .title__page img {
+        width: 25px;
+        margin: 2em 6em;
+    }
+}
+
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadein 3s ease-in forwards;
+    margin: 20px;
+    max-width: 100%;
+}
+
+@keyframes fadeInOut {
+    0% {
+      opacity: 0;
+    }
+    40% {
+      opacity: 1;
+    }
+    60% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
